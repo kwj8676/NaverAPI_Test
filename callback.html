@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>Callback</title>
 </head>
 <body>
@@ -14,3 +15,21 @@
     </script>
 </body>
 </html>
+=======
+    <title>Naver API Callback</title>
+</head>
+<body>
+    <h1>네이버 로그인 인증 완료</h1>
+    <p>이 페이지에서 Access Token을 확인할 수 있습니다.</p>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const code = urlParams.get('code');
+        if (code) {
+            document.body.innerHTML += <p>인증 코드: <strong></strong></p>;
+        } else {
+            document.body.innerHTML += <p>인증 코드가 없습니다.</p>;
+        }
+    </script>
+</body>
+</html>
+>>>>>>> f03d789 (Initialize repository)

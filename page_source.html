@@ -1,0 +1,307 @@
+<html lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="referrer" content="always">
+<link rel="stylesheet" type="text/css" href="/css/w.css?ts=20230831">
+<title>네이버 지도</title>
+<script async="" src="https://ntm.pstatic.net/ex/nlog.js"></script><script async="" src="https://ntm.pstatic.net/scripts/ntm_036d5979ba7d.js"></script><script type="text/javascript" src="/js/vendor.js?ts=20230831"></script>
+<script type="text/javascript" src="/js/baselib.js?ts=20230831"></script>
+<script type="text/javascript" src="/js/error_script.js?ts=20230831"></script>
+
+<script type="text/javascript" language="javascript">
+// 최근검색에 추가
+var $SearchHistoryHandler = new nhn.map.mobile.SearchHistoryHandler();
+var tpl = {};
+	tpl.searchHistory = nhn.map.mobile.TemplateRepos.get("gnb_search_history");
+var tabName = "";
+</script>
+</head>
+<body class="search" style="">
+<div id="u_skip" class="u_skip">
+	<a href="#ct">본문 바로가기</a>
+</div>
+
+<!-- header -->
+<div id="header" class="_header">
+<header class="_gnb">
+	<!-- 검색창 on/off 시 .is_oneline toggle -->
+	<div class="header_area _gnbTopClass">
+		<h1 class="logo_area _home">
+			<a href="https://m.naver.com" class="link_naver" onclick="nclk(this, 'gnb.naver', '', '')">
+				<span class="blind">네이버</span>
+			</a>
+			<a href="/" class="link_map" onclick="nclk(this, 'gnb.map', '', '')">
+				<span class="blind">지도</span>
+			</a>
+		</h1>
+		<div class="btn_area">
+				<button type="button" class="btn_go_app _appLink" style="display:none;">앱 열기</button>
+				<button type="button" class="btn_menu _openAside" data-toggle="._searchKeywordView|is_something" data-nclicks="gnb.menu">
+						<span class="blind">메뉴</span>
+				</button>
+		</div>
+		<div class="top_search_area _searchKeywordView _searchGuide" style="">
+				<div class="search_keyword_area _textPanel">
+						<input type="text" title="검색어 입력" value="" placeholder="장소, 주소 검색" class="input_search_keyword _keyword" autocomplete="off">
+				</div>
+		</div>
+	</div>
+
+	<div id="aside" class="aside_wrap _aside" style="display: none; background-color: rgb(255, 255, 255); width: 0px; height: 651px;">
+		<div class="aside_scroll_area">
+			<div class="aside_content">
+				<!-- 로그인케이스 -->
+				<div class="aside_profile_area">
+					<a href="https://nid.naver.com/mobile/user/help/myInfo.naver" class="aside_profile">
+						<div class="aside_profile_thumb">
+							<!-- [D] 이미지 없을 경우 아래 <img> 미노출 시켜주세요 -->
+						</div>
+					</a>
+				</div>
+				<nav class="aside_menu_area">
+					<ul class="aside_menu_list">
+						<li class="aside_menu_item">
+							<!-- [D] 현재 페이지에서 aria-current="page" 추가해주세요 -->
+							<a href="/" class="aside_menu is_map" onclick="nclk(this, 'cmn.search', '', '')" style="line-height: 40px;">지도</a>
+						</li>
+						<li class="aside_menu_item">
+							<a href="/directions" class="aside_menu is_direction" target="_blank" onclick="nclk(this, 'cmn.route', '', '')" style="line-height: 40px;">
+								길찾기
+								<span class="icon_external">
+									<span class="blind">네이버 통합검색</span>
+								</span>
+							</a>
+						</li>
+						<li class="aside_menu_item">
+							<a href="/bus/index.naver" class="aside_menu is_bus" onclick="nclk(this, 'cmn.bus', '', '')" style="line-height: 40px;">버스</a>
+						</li>
+						<li class="aside_menu_item">
+							<a href="https://m.search.naver.com/search.naver?query=%EC%A7%80%ED%95%98%EC%B2%A0%EB%85%B8%EC%84%A0%EB%8F%84" class="aside_menu is_subway" onclick="nclk(this, 'cmn.subway', '', '')" style="line-height: 40px;">지하철</a>
+						</li>
+						<li class="aside_menu_item">
+							<a href="https://rtt.map.naver.com/end-traffic/ends/web/home" class="aside_menu is_traffic" onclick="nclk(this, 'cmn.traffic', '', '')" style="line-height: 40px;">교통정보</a>
+						</li>
+					</ul>
+				</nav>
+				<ul class="aside_menu_list is_support"><li class="aside_menu_item"><a href="https://pages.map.naver.com/agree-term/bridges/details/web/home?lng=ko" onclick="nclk(this, &quot;cmn.policy&quot;, &quot;&quot;, &quot;&quot;)" class="aside_menu" style="line-height: 40px;">이용약관 및 정책</a></li><li class="aside_menu_item"><a href="https://help.naver.com/alias/local/map_15.naver" onclick="nclk(this, 'cmn.help', '', '')" class="aside_menu" style="line-height: 40px;">이용약관 및 정책</a></li>
+					<li class="aside_menu_item">
+						<a href="https://help.naver.com/alias/local/map_15.naver" onclick="nclk(this, 'cmn.help', '', '')" class="aside_menu" style="line-height: 40px;">지도 고객센터</a>
+					</li>
+					<li class="aside_menu_item">
+						<a href="https://m.smartplace.naver.com/places/user-engagements" onclick="nclk(this, 'cmn.placesubmit', '', '')" class="aside_menu" style="line-height: 40px;">신규장소 등록</a>
+					</li>
+					<li class="aside_menu_item">
+						<a href="/menu.naver?menu=legalNotice" onclick="nclk(this, 'cmn.legalnotice', '', '')" class="aside_menu" style="line-height: 40px;">법적공지</a>
+					</li>
+					<li class="aside_menu_item">
+						<a href="/menu.naver?menu=informationProvider" onclick="nclk(this, 'cmn.provider', '', '')" class="aside_menu" style="line-height: 40px;">정보제공처</a>
+					</li>
+				</ul>
+			</div>
+			<div class="aside_footer" style="border-top: 0px; position: absolute; bottom: 3px;">
+				<a href="https://www.navercorp.com/" onclick="nclk(this, 'cmn.navercorp', '', '')" class="aside_copyright">
+					<span class="blind">NAVER</span>
+				</a>
+			</div>
+			<button type="button" class="btn_close_aside  _close" data-nclicks="gnb.close" style="display: none;">
+				<span class="blind">메뉴 닫기</span>
+			</button>
+		</div>
+	</div>
+	<div class="dmm" style="display: none; height: 651px;"></div>
+</header>
+</div>
+<!--// header -->
+
+<hr>
+<!-- content -->
+<div id="ct">
+
+	<!-- 키워드검색 -->
+	<div class="search_layout_wrap _searchView" style="display:none;">
+
+		<div class="search_header">
+			<div class="keyword_search_area">
+				<button type="button" class="btn_search_back _closeSearchForm" data-nclicks="scw.close">
+					<span class="blind">뒤로가기</span>
+				</button>
+				<form class="keyword_search_form _formSearch" action="#" data-submit-nclicks="msr.search">
+					<!-- [D] input 에 값 들어오면 keyword_search_input 에 has_value 클래스 추가해주세요 -->
+					<input type="text" class="keyword_search_input _search_input" name="search_query" value="" maxlength="100" placeholder="장소, 주소 검색" title="검색어 입력" autocomplete="off">
+					<button type="button" class="btn_clear_search_keyword _clear" data-nclicks="scw.kwdx">
+						<span class="blind">검색어 삭제</span>
+					</button>
+				</form>
+			</div>
+			<button type="button" class="btn_cancel_search _closeSearchForm" data-nclicks="scw.close">취소</button>
+		</div>
+		<div class="search_bubble_category_scroll _searchAssistView" style="display:none;">
+			<ul class="search_category_list">
+				<li class="search_category_item">
+					<button type="button" class="search_category type_dining _linkCategory" data-nclicks="scn.restaurant" data-category="DINING">음식점</button>
+				</li>
+				<li class="search_category_item">
+					<button type="button" class="search_category type_cafe _linkCategory" data-nclicks="scn.cafe" data-category="CAFE">카페</button>
+				</li>
+				<li class="search_category_item">
+					<button type="button" class="search_category type_shopping _linkCategory" data-nclicks="scn.shopping" data-category="SHOPPING">쇼핑</button>
+				</li>
+				<li class="search_category_item">
+					<button type="button" class="search_category type_accommodation _linkCategory" data-nclicks="scn.accom" data-category="ACCOMMODATION">숙박</button>
+				</li>
+				<li class="search_category_item">
+					<button type="button" class="search_category type_hospital _linkCategory" data-nclicks="scn.medical" data-category="HOSPITAL">병원의료</button>
+				</li>
+				<li class="search_category_item">
+					<button type="button" class="search_category type_bank _linkCategory" data-nclicks="scn.bank" data-category="BANK">은행</button>
+				</li>
+				<li class="search_category_item">
+					<button type="button" class="search_category type_gas _linkCategory" data-nclicks="scn.gas" data-category="OIL">주유소</button>
+				</li>
+				<li class="search_category_item">
+					<button type="button" class="search_category type_mart _linkCategory" data-nclicks="scn.mart" data-category="MART">마트슈퍼</button>
+				</li>
+				<li class="search_category_item">
+					<button type="button" class="search_category type_store _linkCategory" data-nclicks="scn.cvs" data-category="STORE">편의점</button>
+				</li>
+				<li class="search_category_item">
+					<button type="button" class="search_category type_convenience _linkCategory" data-nclicks="scn.life" data-category="CONVENIENCE">생활편의</button>
+				</li>
+				<li class="search_category_item">
+					<button type="button" class="search_category type_touristattraction _linkCategory" data-nclicks="scn.sights" data-category="SIGHTS">명소</button>
+				</li>
+				<li class="search_category_item">
+					<button type="button" class="search_category type_sport _linkCategory" data-nclicks="scn.sports" data-category="SPORT">체육시설</button>
+				</li>
+				<li class="search_category_item">
+					<button type="button" class="search_category type_cinema _linkCategory" data-nclicks="scn.movie" data-category="CINEMA">영화공연</button>
+				</li>
+				<li class="search_category_item">
+					<button type="button" class="search_category type_government _linkCategory" data-nclicks="scn.office" data-category="GOVERNMENT">관공서</button>
+				</li>
+			</ul>
+		</div>
+
+		<!-- 자동완성 템플릿 -->
+		<div id="view" class="_searchAssistView" style="display:none;">
+			<!-- 최근검색어 -->
+			<div class="_searchHistoryDiv" style="display: none;">
+					<div class="recent_search_area _searchHistory" style="display: none;">
+							<ul class="search_keyword_list _historyList">
+									<!-- list item
+									<li class="search_keyword_item">
+											<button type="button" class="btn_search_keyword">
+															<span class="icon_search_history">
+																	<span class="blind">최근검색</span>
+															</span>
+													<span class="search_keyword_text">정자동 맛집</span>
+											</button>
+											<button type="button" class="btn_remove_search_keyword">
+													<span class="blind">삭제</span>
+											</button>
+									</li>
+									-->
+							</ul>
+							<div class="recent_search_bottom">
+									<button type="button" class="btn_clear_search_history _delHistory" data-nclicks="scr.delAll">전체삭제</button>
+							</div>
+					</div>
+
+					<!-- 최근검색어 없음  -->
+					<div class="recent_search_area _noHistory _offedHistory" style="">
+							<div class="search_error_wrap type_search">
+									<em class="icon_search_notice">
+											<span class="blind">안내</span>
+									</em>
+									<p class="search_error_message">최근 검색 기록이 없습니다.</p>
+							</div>
+					</div>
+			</div>
+			<!--// 최근검색어 -->
+			<!-- 자동완성 -->
+			<div class="atcp_search_area _ac_layer" style="display: none; z-index: 1000; position: relative;">
+					<ul class="search_keyword_list">
+							<!-- list item -->
+							<!--
+							<li class="search_keyword_item">
+									<button type="button" class="btn_search_keyword">
+											<span class="icon_search_keyword">
+													<span class="blind">검색</span>
+											</span>
+											<span class="search_keyword_text"><strong>정자동</strong> 맛집</span>
+									</button>
+							</li>
+							-->
+					</ul>
+			</div>
+			<!--// 자동완성 -->
+		</div>
+		<!--// 자동완성 템플릿 -->
+
+	</div>
+	<!--// 키워드검색 -->
+
+	<!-- 검색결과 -->
+	<div class="search_listview _ctContent">
+
+		<!-- 결과 헤더 영역 -->
+		<div class="search_list_head">
+			<!-- 검색 결과 -->
+			<div class="_resultQuery"></div>
+			<!--// 검색 결과 -->
+			<!-- 재검색 -->
+			<div class="_linkQuery"></div>
+			<!--// 재검색 -->
+		</div>
+		<!--// 결과 헤더 영역 -->
+
+		<!-- 에러영역 -->
+		<div class="section_err _errorMessage">
+			<div class="section_err_inn">
+				<i class="ico_err"></i>
+				<h4>페이지를 찾을 수 없습니다.</h4>
+				<p>URL이 잘못 입력되었거나, 변경 혹은 삭제되어<br>
+				요청하신 페이지를 찾을 수 없습니다.</p>
+				<div class="err_nav">
+					<a href="#" onclick="event.preventDefault(); history.back();">돌아가기</a><span class="bar">|</span><a href="/">지도홈</a><span class="bar">|</span><a href="http://m.naver.com">네이버홈</a>
+				</div>
+			</div>
+		</div>
+		<!--// 에러영역 -->
+
+	</div>
+	<!--// 검색결과 -->
+
+</div>
+<!-- //content -->
+
+<script type="text/javascript">
+	$(window).load(function() {
+		/**
+		 * <a href="#">링크</a>
+		 * 위와 같은 형태로 된 링크를 '#'동작이 먹지 않게 막는다.
+		 */
+		$(document).delegate("a[href='#']","click",function(event){
+			event.preventDefault();
+		});
+
+		nhn.map.Env.setServiceVars({
+			page: {
+				autoCompleteUrl: "https://m.map.naver.com/ac.map-search/ac"
+			},
+			gnb: {
+				pcWebURL: "https://map.naver.com/?mobile"
+			}
+		});
+
+		var errorViewController = new nhn.map.mobile.ErrorPageViewController();
+
+		window.mobileDeck = new nhn.map.mobile.deck.MobileDeck();
+		window.mobileDeck.activate();
+
+	}.bind(this));
+
+</script>
+
+
+</body></html>
