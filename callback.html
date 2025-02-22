@@ -1,35 +1,23 @@
-ï»¿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-    <title>Callback</title>
+    <title>³×ÀÌ¹ö ·Î±×ÀÎ Callback ÆäÀÌÁö</title>
 </head>
 <body>
-    <h1>ë„¤ì´ë²„ ë¡œê·¸ì¸ Callback í˜ì´ì§€</h1>
+    <h1>³×ÀÌ¹ö ·Î±×ÀÎ Callback ÆäÀÌÁö</h1>
+    <p id="authCode">ÀÎÁõ ÄÚµå: ·Îµù Áß...</p>
+
     <script>
         const urlParams = new URLSearchParams(window.location.search);
-        const code = urlParams.get('code');
-        document.write("<p>ì¸ì¦ ì½”ë“œ: " + code + "</p>");
-    </script>
-</body>
-</html>
-=======
-    <title>Naver API Callback</title>
-</head>
-<body>
-    <h1>ë„¤ì´ë²„ ë¡œê·¸ì¸ ì¸ì¦ ì™„ë£Œ</h1>
-    <p>ì´ í˜ì´ì§€ì—ì„œ Access Tokenì„ í™•ì¸í•  ìˆ˜ ìˆìŠµë‹ˆë‹¤.</p>
-    <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        const code = urlParams.get('code');
-        if (code) {
-            document.body.innerHTML += <p>ì¸ì¦ ì½”ë“œ: <strong></strong></p>;
+        const authCode = urlParams.get('code');
+
+        if (authCode) {
+            document.getElementById('authCode').innerText = ÀÎÁõ ÄÚµå: \;
         } else {
-            document.body.innerHTML += <p>ì¸ì¦ ì½”ë“œê°€ ì—†ìŠµë‹ˆë‹¤.</p>;
+            document.getElementById('authCode').innerText = "ÀÎÁõ ÄÚµå°¡ ¾ø½À´Ï´Ù.";
         }
     </script>
 </body>
 </html>
->>>>>>> f03d789 (Initialize repository)
