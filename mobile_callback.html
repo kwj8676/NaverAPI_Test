@@ -1,1 +1,22 @@
-<html><body><h1>모바일 로그인 콜백</h1></body></html>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모바일 로그인 콜백</title>
+</head>
+<body>
+    <h1>모바일 로그인 콜백</h1>
+    <p>인증 코드를 확인하세요.</p>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const authCode = urlParams.get('code');
+
+        if (authCode) {
+            document.write(<p>인증 코드: \</p>);
+        } else {
+            document.write(<p>인증 코드가 없습니다.</p>);
+        }
+    </script>
+</body>
+</html>
