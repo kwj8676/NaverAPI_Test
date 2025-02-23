@@ -1,22 +1,19 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang='ko'>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PC 로그인 콜백</title>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>PC 로그인 완료</title>
 </head>
 <body>
-    <h1>PC 로그인 콜백</h1>
-    <p>인증 코드를 확인하세요.</p>
+    <h1>네이버 로그인 완료</h1>
+    <p>아래 인증 코드를 복사해 API 요청에 사용하세요.</p>
+    <p id='authCode'>인증 코드: 로딩 중...</p>
+
     <script>
         const urlParams = new URLSearchParams(window.location.search);
         const authCode = urlParams.get('code');
-
-        if (authCode) {
-            document.write(<p>인증 코드: \</p>);
-        } else {
-            document.write(<p>인증 코드가 없습니다.</p>);
-        }
+        document.getElementById('authCode').innerText = authCode ? '인증 코드: ' + authCode : '인증 코드 없음';
     </script>
 </body>
 </html>

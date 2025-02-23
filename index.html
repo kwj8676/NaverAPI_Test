@@ -1,14 +1,22 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang='ko'>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>네이버 로그인 테스트</title>
 </head>
 <body>
-    <h1>네이버 로그인 테스트</h1>
-    <a href="https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=YOUR_CLIENT_ID&redirect_uri=https://kwj8676.github.io/NaverAPI_Test/desktop_callback.html&state=test1234">
-        <img src="https://static.nid.naver.com/oauth/small_g_in.PNG" alt="네이버 로그인">
+    <h1>네이버 로그인 시스템</h1>
+    <p>네이버 로그인을 통해 서비스를 이용하세요.</p>
+
+    <h2>PC 로그인</h2>
+    <a href='https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=AMTimONNR7oHKAqBpwBT&redirect_uri=https://kwj8676.github.io/NaverAPI_Test/desktop_callback.html&state=test'>
+        <button>네이버 로그인 (PC)</button>
+    </a>
+
+    <h2>모바일 로그인</h2>
+    <a href='https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=AMTimONNR7oHKAqBpwBT&redirect_uri=https://kwj8676.github.io/NaverAPI_Test/mobile_callback.html&state=test'>
+        <button>네이버 로그인 (모바일)</button>
     </a>
 </body>
 </html>
