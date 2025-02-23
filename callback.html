@@ -1,22 +1,22 @@
-<!DOCTYPE html>
+ï»¿<!DOCTYPE html>
 <html lang="ko">
-<head>
+<head>`n    <meta charset="UTF-8">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>³×ÀÌ¹ö ·Î±×ÀÎ Callback ÆäÀÌÁö</title>
+    <title>ë„¤ì´ë²„ ë¡œê·¸ì¸ Callback í˜ì´ì§€</title>
 </head>
 <body>
-    <h1>³×ÀÌ¹ö ·Î±×ÀÎ Callback ÆäÀÌÁö</h1>
-    <p id="authCode">ÀÎÁõ ÄÚµå: ·Îµù Áß...</p>
+    <h1>ë„¤ì´ë²„ ë¡œê·¸ì¸ Callback í˜ì´ì§€</h1>
+    <p id="authCode">ì¸ì¦ ì½”ë“œ: ë¡œë”© ì¤‘...</p>
 
     <script>
         const urlParams = new URLSearchParams(window.location.search);
         const authCode = urlParams.get('code');
 
         if (authCode) {
-            document.getElementById('authCode').innerText = ÀÎÁõ ÄÚµå: \;
+            document.getElementById('authCode').innerText = ì¸ì¦ ì½”ë“œ: \;
         } else {
-            document.getElementById('authCode').innerText = "ÀÎÁõ ÄÚµå°¡ ¾ø½À´Ï´Ù.";
+            document.getElementById('authCode').innerText = "ì¸ì¦ ì½”ë“œê°€ ì—†ìŠµë‹ˆë‹¤.";
         }
     </script>
 </body>

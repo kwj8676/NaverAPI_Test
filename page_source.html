@@ -1,15 +1,15 @@
-<html lang="ko"><head>
+﻿<html lang="ko"><head>`n    <meta charset="UTF-8">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 <meta name="referrer" content="always">
 <link rel="stylesheet" type="text/css" href="/css/w.css?ts=20230831">
-<title>네이버 지도</title>
+<title>?ㅼ씠踰?吏??/title>
 <script async="" src="https://ntm.pstatic.net/ex/nlog.js"></script><script async="" src="https://ntm.pstatic.net/scripts/ntm_036d5979ba7d.js"></script><script type="text/javascript" src="/js/vendor.js?ts=20230831"></script>
 <script type="text/javascript" src="/js/baselib.js?ts=20230831"></script>
 <script type="text/javascript" src="/js/error_script.js?ts=20230831"></script>
 
 <script type="text/javascript" language="javascript">
-// 최근검색에 추가
+// 理쒓렐寃?됱뿉 異붽?
 var $SearchHistoryHandler = new nhn.map.mobile.SearchHistoryHandler();
 var tpl = {};
 	tpl.searchHistory = nhn.map.mobile.TemplateRepos.get("gnb_search_history");
@@ -18,31 +18,31 @@ var tabName = "";
 </head>
 <body class="search" style="">
 <div id="u_skip" class="u_skip">
-	<a href="#ct">본문 바로가기</a>
+	<a href="#ct">蹂몃Ц 諛붾줈媛湲?/a>
 </div>
 
 <!-- header -->
 <div id="header" class="_header">
 <header class="_gnb">
-	<!-- 검색창 on/off 시 .is_oneline toggle -->
+	<!-- 寃?됱갹 on/off ??.is_oneline toggle -->
 	<div class="header_area _gnbTopClass">
 		<h1 class="logo_area _home">
 			<a href="https://m.naver.com" class="link_naver" onclick="nclk(this, 'gnb.naver', '', '')">
-				<span class="blind">네이버</span>
+				<span class="blind">?ㅼ씠踰?/span>
 			</a>
 			<a href="/" class="link_map" onclick="nclk(this, 'gnb.map', '', '')">
-				<span class="blind">지도</span>
+				<span class="blind">吏??/span>
 			</a>
 		</h1>
 		<div class="btn_area">
-				<button type="button" class="btn_go_app _appLink" style="display:none;">앱 열기</button>
+				<button type="button" class="btn_go_app _appLink" style="display:none;">???닿린</button>
 				<button type="button" class="btn_menu _openAside" data-toggle="._searchKeywordView|is_something" data-nclicks="gnb.menu">
-						<span class="blind">메뉴</span>
+						<span class="blind">硫붾돱</span>
 				</button>
 		</div>
 		<div class="top_search_area _searchKeywordView _searchGuide" style="">
 				<div class="search_keyword_area _textPanel">
-						<input type="text" title="검색어 입력" value="" placeholder="장소, 주소 검색" class="input_search_keyword _keyword" autocomplete="off">
+						<input type="text" title="寃?됱뼱 ?낅젰" value="" placeholder="?μ냼, 二쇱냼 寃?? class="input_search_keyword _keyword" autocomplete="off">
 				</div>
 		</div>
 	</div>
@@ -50,51 +50,51 @@ var tabName = "";
 	<div id="aside" class="aside_wrap _aside" style="display: none; background-color: rgb(255, 255, 255); width: 0px; height: 651px;">
 		<div class="aside_scroll_area">
 			<div class="aside_content">
-				<!-- 로그인케이스 -->
+				<!-- 濡쒓렇?몄??댁뒪 -->
 				<div class="aside_profile_area">
 					<a href="https://nid.naver.com/mobile/user/help/myInfo.naver" class="aside_profile">
 						<div class="aside_profile_thumb">
-							<!-- [D] 이미지 없을 경우 아래 <img> 미노출 시켜주세요 -->
+							<!-- [D] ?대?吏 ?놁쓣 寃쎌슦 ?꾨옒 <img> 誘몃끂異??쒖폒二쇱꽭??-->
 						</div>
 					</a>
 				</div>
 				<nav class="aside_menu_area">
 					<ul class="aside_menu_list">
 						<li class="aside_menu_item">
-							<!-- [D] 현재 페이지에서 aria-current="page" 추가해주세요 -->
-							<a href="/" class="aside_menu is_map" onclick="nclk(this, 'cmn.search', '', '')" style="line-height: 40px;">지도</a>
+							<!-- [D] ?꾩옱 ?섏씠吏?먯꽌 aria-current="page" 異붽??댁＜?몄슂 -->
+							<a href="/" class="aside_menu is_map" onclick="nclk(this, 'cmn.search', '', '')" style="line-height: 40px;">吏??/a>
 						</li>
 						<li class="aside_menu_item">
 							<a href="/directions" class="aside_menu is_direction" target="_blank" onclick="nclk(this, 'cmn.route', '', '')" style="line-height: 40px;">
-								길찾기
+								湲몄갼湲?
 								<span class="icon_external">
-									<span class="blind">네이버 통합검색</span>
+									<span class="blind">?ㅼ씠踰??듯빀寃??/span>
 								</span>
 							</a>
 						</li>
 						<li class="aside_menu_item">
-							<a href="/bus/index.naver" class="aside_menu is_bus" onclick="nclk(this, 'cmn.bus', '', '')" style="line-height: 40px;">버스</a>
+							<a href="/bus/index.naver" class="aside_menu is_bus" onclick="nclk(this, 'cmn.bus', '', '')" style="line-height: 40px;">踰꾩뒪</a>
 						</li>
 						<li class="aside_menu_item">
-							<a href="https://m.search.naver.com/search.naver?query=%EC%A7%80%ED%95%98%EC%B2%A0%EB%85%B8%EC%84%A0%EB%8F%84" class="aside_menu is_subway" onclick="nclk(this, 'cmn.subway', '', '')" style="line-height: 40px;">지하철</a>
+							<a href="https://m.search.naver.com/search.naver?query=%EC%A7%80%ED%95%98%EC%B2%A0%EB%85%B8%EC%84%A0%EB%8F%84" class="aside_menu is_subway" onclick="nclk(this, 'cmn.subway', '', '')" style="line-height: 40px;">吏?섏쿋</a>
 						</li>
 						<li class="aside_menu_item">
-							<a href="https://rtt.map.naver.com/end-traffic/ends/web/home" class="aside_menu is_traffic" onclick="nclk(this, 'cmn.traffic', '', '')" style="line-height: 40px;">교통정보</a>
+							<a href="https://rtt.map.naver.com/end-traffic/ends/web/home" class="aside_menu is_traffic" onclick="nclk(this, 'cmn.traffic', '', '')" style="line-height: 40px;">援먰넻?뺣낫</a>
 						</li>
 					</ul>
 				</nav>
-				<ul class="aside_menu_list is_support"><li class="aside_menu_item"><a href="https://pages.map.naver.com/agree-term/bridges/details/web/home?lng=ko" onclick="nclk(this, &quot;cmn.policy&quot;, &quot;&quot;, &quot;&quot;)" class="aside_menu" style="line-height: 40px;">이용약관 및 정책</a></li><li class="aside_menu_item"><a href="https://help.naver.com/alias/local/map_15.naver" onclick="nclk(this, 'cmn.help', '', '')" class="aside_menu" style="line-height: 40px;">이용약관 및 정책</a></li>
+				<ul class="aside_menu_list is_support"><li class="aside_menu_item"><a href="https://pages.map.naver.com/agree-term/bridges/details/web/home?lng=ko" onclick="nclk(this, &quot;cmn.policy&quot;, &quot;&quot;, &quot;&quot;)" class="aside_menu" style="line-height: 40px;">?댁슜?쎄? 諛??뺤콉</a></li><li class="aside_menu_item"><a href="https://help.naver.com/alias/local/map_15.naver" onclick="nclk(this, 'cmn.help', '', '')" class="aside_menu" style="line-height: 40px;">?댁슜?쎄? 諛??뺤콉</a></li>
 					<li class="aside_menu_item">
-						<a href="https://help.naver.com/alias/local/map_15.naver" onclick="nclk(this, 'cmn.help', '', '')" class="aside_menu" style="line-height: 40px;">지도 고객센터</a>
+						<a href="https://help.naver.com/alias/local/map_15.naver" onclick="nclk(this, 'cmn.help', '', '')" class="aside_menu" style="line-height: 40px;">吏??怨좉컼?쇳꽣</a>
 					</li>
 					<li class="aside_menu_item">
-						<a href="https://m.smartplace.naver.com/places/user-engagements" onclick="nclk(this, 'cmn.placesubmit', '', '')" class="aside_menu" style="line-height: 40px;">신규장소 등록</a>
+						<a href="https://m.smartplace.naver.com/places/user-engagements" onclick="nclk(this, 'cmn.placesubmit', '', '')" class="aside_menu" style="line-height: 40px;">?좉퇋?μ냼 ?깅줉</a>
 					</li>
 					<li class="aside_menu_item">
-						<a href="/menu.naver?menu=legalNotice" onclick="nclk(this, 'cmn.legalnotice', '', '')" class="aside_menu" style="line-height: 40px;">법적공지</a>
+						<a href="/menu.naver?menu=legalNotice" onclick="nclk(this, 'cmn.legalnotice', '', '')" class="aside_menu" style="line-height: 40px;">踰뺤쟻怨듭?</a>
 					</li>
 					<li class="aside_menu_item">
-						<a href="/menu.naver?menu=informationProvider" onclick="nclk(this, 'cmn.provider', '', '')" class="aside_menu" style="line-height: 40px;">정보제공처</a>
+						<a href="/menu.naver?menu=informationProvider" onclick="nclk(this, 'cmn.provider', '', '')" class="aside_menu" style="line-height: 40px;">?뺣낫?쒓났泥?/a>
 					</li>
 				</ul>
 			</div>
@@ -104,7 +104,7 @@ var tabName = "";
 				</a>
 			</div>
 			<button type="button" class="btn_close_aside  _close" data-nclicks="gnb.close" style="display: none;">
-				<span class="blind">메뉴 닫기</span>
+				<span class="blind">硫붾돱 ?リ린</span>
 			</button>
 		</div>
 	</div>
@@ -117,74 +117,74 @@ var tabName = "";
 <!-- content -->
 <div id="ct">
 
-	<!-- 키워드검색 -->
+	<!-- ?ㅼ썙?쒓???-->
 	<div class="search_layout_wrap _searchView" style="display:none;">
 
 		<div class="search_header">
 			<div class="keyword_search_area">
 				<button type="button" class="btn_search_back _closeSearchForm" data-nclicks="scw.close">
-					<span class="blind">뒤로가기</span>
+					<span class="blind">?ㅻ줈媛湲?/span>
 				</button>
 				<form class="keyword_search_form _formSearch" action="#" data-submit-nclicks="msr.search">
-					<!-- [D] input 에 값 들어오면 keyword_search_input 에 has_value 클래스 추가해주세요 -->
-					<input type="text" class="keyword_search_input _search_input" name="search_query" value="" maxlength="100" placeholder="장소, 주소 검색" title="검색어 입력" autocomplete="off">
+					<!-- [D] input ??媛??ㅼ뼱?ㅻ㈃ keyword_search_input ??has_value ?대옒??異붽??댁＜?몄슂 -->
+					<input type="text" class="keyword_search_input _search_input" name="search_query" value="" maxlength="100" placeholder="?μ냼, 二쇱냼 寃?? title="寃?됱뼱 ?낅젰" autocomplete="off">
 					<button type="button" class="btn_clear_search_keyword _clear" data-nclicks="scw.kwdx">
-						<span class="blind">검색어 삭제</span>
+						<span class="blind">寃?됱뼱 ??젣</span>
 					</button>
 				</form>
 			</div>
-			<button type="button" class="btn_cancel_search _closeSearchForm" data-nclicks="scw.close">취소</button>
+			<button type="button" class="btn_cancel_search _closeSearchForm" data-nclicks="scw.close">痍⑥냼</button>
 		</div>
 		<div class="search_bubble_category_scroll _searchAssistView" style="display:none;">
 			<ul class="search_category_list">
 				<li class="search_category_item">
-					<button type="button" class="search_category type_dining _linkCategory" data-nclicks="scn.restaurant" data-category="DINING">음식점</button>
+					<button type="button" class="search_category type_dining _linkCategory" data-nclicks="scn.restaurant" data-category="DINING">?뚯떇??/button>
 				</li>
 				<li class="search_category_item">
-					<button type="button" class="search_category type_cafe _linkCategory" data-nclicks="scn.cafe" data-category="CAFE">카페</button>
+					<button type="button" class="search_category type_cafe _linkCategory" data-nclicks="scn.cafe" data-category="CAFE">移댄럹</button>
 				</li>
 				<li class="search_category_item">
-					<button type="button" class="search_category type_shopping _linkCategory" data-nclicks="scn.shopping" data-category="SHOPPING">쇼핑</button>
+					<button type="button" class="search_category type_shopping _linkCategory" data-nclicks="scn.shopping" data-category="SHOPPING">?쇳븨</button>
 				</li>
 				<li class="search_category_item">
-					<button type="button" class="search_category type_accommodation _linkCategory" data-nclicks="scn.accom" data-category="ACCOMMODATION">숙박</button>
+					<button type="button" class="search_category type_accommodation _linkCategory" data-nclicks="scn.accom" data-category="ACCOMMODATION">?숇컯</button>
 				</li>
 				<li class="search_category_item">
-					<button type="button" class="search_category type_hospital _linkCategory" data-nclicks="scn.medical" data-category="HOSPITAL">병원의료</button>
+					<button type="button" class="search_category type_hospital _linkCategory" data-nclicks="scn.medical" data-category="HOSPITAL">蹂묒썝?섎즺</button>
 				</li>
 				<li class="search_category_item">
-					<button type="button" class="search_category type_bank _linkCategory" data-nclicks="scn.bank" data-category="BANK">은행</button>
+					<button type="button" class="search_category type_bank _linkCategory" data-nclicks="scn.bank" data-category="BANK">???/button>
 				</li>
 				<li class="search_category_item">
-					<button type="button" class="search_category type_gas _linkCategory" data-nclicks="scn.gas" data-category="OIL">주유소</button>
+					<button type="button" class="search_category type_gas _linkCategory" data-nclicks="scn.gas" data-category="OIL">二쇱쑀??/button>
 				</li>
 				<li class="search_category_item">
-					<button type="button" class="search_category type_mart _linkCategory" data-nclicks="scn.mart" data-category="MART">마트슈퍼</button>
+					<button type="button" class="search_category type_mart _linkCategory" data-nclicks="scn.mart" data-category="MART">留덊듃?덊띁</button>
 				</li>
 				<li class="search_category_item">
-					<button type="button" class="search_category type_store _linkCategory" data-nclicks="scn.cvs" data-category="STORE">편의점</button>
+					<button type="button" class="search_category type_store _linkCategory" data-nclicks="scn.cvs" data-category="STORE">?몄쓽??/button>
 				</li>
 				<li class="search_category_item">
-					<button type="button" class="search_category type_convenience _linkCategory" data-nclicks="scn.life" data-category="CONVENIENCE">생활편의</button>
+					<button type="button" class="search_category type_convenience _linkCategory" data-nclicks="scn.life" data-category="CONVENIENCE">?앺솢?몄쓽</button>
 				</li>
 				<li class="search_category_item">
-					<button type="button" class="search_category type_touristattraction _linkCategory" data-nclicks="scn.sights" data-category="SIGHTS">명소</button>
+					<button type="button" class="search_category type_touristattraction _linkCategory" data-nclicks="scn.sights" data-category="SIGHTS">紐낆냼</button>
 				</li>
 				<li class="search_category_item">
-					<button type="button" class="search_category type_sport _linkCategory" data-nclicks="scn.sports" data-category="SPORT">체육시설</button>
+					<button type="button" class="search_category type_sport _linkCategory" data-nclicks="scn.sports" data-category="SPORT">泥댁쑁?쒖꽕</button>
 				</li>
 				<li class="search_category_item">
-					<button type="button" class="search_category type_cinema _linkCategory" data-nclicks="scn.movie" data-category="CINEMA">영화공연</button>
+					<button type="button" class="search_category type_cinema _linkCategory" data-nclicks="scn.movie" data-category="CINEMA">?곹솕怨듭뿰</button>
 				</li>
 				<li class="search_category_item">
-					<button type="button" class="search_category type_government _linkCategory" data-nclicks="scn.office" data-category="GOVERNMENT">관공서</button>
+					<button type="button" class="search_category type_government _linkCategory" data-nclicks="scn.office" data-category="GOVERNMENT">愿怨듭꽌</button>
 				</li>
 			</ul>
 		</div>
 
-		<!-- 자동완성 템플릿 -->
+		<!-- ?먮룞?꾩꽦 ?쒗뵆由?-->
 		<div id="view" class="_searchAssistView" style="display:none;">
-			<!-- 최근검색어 -->
+			<!-- 理쒓렐寃?됱뼱 -->
 			<div class="_searchHistoryDiv" style="display: none;">
 					<div class="recent_search_area _searchHistory" style="display: none;">
 							<ul class="search_keyword_list _historyList">
@@ -192,33 +192,33 @@ var tabName = "";
 									<li class="search_keyword_item">
 											<button type="button" class="btn_search_keyword">
 															<span class="icon_search_history">
-																	<span class="blind">최근검색</span>
+																	<span class="blind">理쒓렐寃??/span>
 															</span>
-													<span class="search_keyword_text">정자동 맛집</span>
+													<span class="search_keyword_text">?뺤옄??留쏆쭛</span>
 											</button>
 											<button type="button" class="btn_remove_search_keyword">
-													<span class="blind">삭제</span>
+													<span class="blind">??젣</span>
 											</button>
 									</li>
 									-->
 							</ul>
 							<div class="recent_search_bottom">
-									<button type="button" class="btn_clear_search_history _delHistory" data-nclicks="scr.delAll">전체삭제</button>
+									<button type="button" class="btn_clear_search_history _delHistory" data-nclicks="scr.delAll">?꾩껜??젣</button>
 							</div>
 					</div>
 
-					<!-- 최근검색어 없음  -->
+					<!-- 理쒓렐寃?됱뼱 ?놁쓬  -->
 					<div class="recent_search_area _noHistory _offedHistory" style="">
 							<div class="search_error_wrap type_search">
 									<em class="icon_search_notice">
-											<span class="blind">안내</span>
+											<span class="blind">?덈궡</span>
 									</em>
-									<p class="search_error_message">최근 검색 기록이 없습니다.</p>
+									<p class="search_error_message">理쒓렐 寃??湲곕줉???놁뒿?덈떎.</p>
 							</div>
 					</div>
 			</div>
-			<!--// 최근검색어 -->
-			<!-- 자동완성 -->
+			<!--// 理쒓렐寃?됱뼱 -->
+			<!-- ?먮룞?꾩꽦 -->
 			<div class="atcp_search_area _ac_layer" style="display: none; z-index: 1000; position: relative;">
 					<ul class="search_keyword_list">
 							<!-- list item -->
@@ -226,51 +226,51 @@ var tabName = "";
 							<li class="search_keyword_item">
 									<button type="button" class="btn_search_keyword">
 											<span class="icon_search_keyword">
-													<span class="blind">검색</span>
+													<span class="blind">寃??/span>
 											</span>
-											<span class="search_keyword_text"><strong>정자동</strong> 맛집</span>
+											<span class="search_keyword_text"><strong>?뺤옄??/strong> 留쏆쭛</span>
 									</button>
 							</li>
 							-->
 					</ul>
 			</div>
-			<!--// 자동완성 -->
+			<!--// ?먮룞?꾩꽦 -->
 		</div>
-		<!--// 자동완성 템플릿 -->
+		<!--// ?먮룞?꾩꽦 ?쒗뵆由?-->
 
 	</div>
-	<!--// 키워드검색 -->
+	<!--// ?ㅼ썙?쒓???-->
 
-	<!-- 검색결과 -->
+	<!-- 寃?됯껐怨?-->
 	<div class="search_listview _ctContent">
 
-		<!-- 결과 헤더 영역 -->
+		<!-- 寃곌낵 ?ㅻ뜑 ?곸뿭 -->
 		<div class="search_list_head">
-			<!-- 검색 결과 -->
+			<!-- 寃??寃곌낵 -->
 			<div class="_resultQuery"></div>
-			<!--// 검색 결과 -->
-			<!-- 재검색 -->
+			<!--// 寃??寃곌낵 -->
+			<!-- ?ш???-->
 			<div class="_linkQuery"></div>
-			<!--// 재검색 -->
+			<!--// ?ш???-->
 		</div>
-		<!--// 결과 헤더 영역 -->
+		<!--// 寃곌낵 ?ㅻ뜑 ?곸뿭 -->
 
-		<!-- 에러영역 -->
+		<!-- ?먮윭?곸뿭 -->
 		<div class="section_err _errorMessage">
 			<div class="section_err_inn">
 				<i class="ico_err"></i>
-				<h4>페이지를 찾을 수 없습니다.</h4>
-				<p>URL이 잘못 입력되었거나, 변경 혹은 삭제되어<br>
-				요청하신 페이지를 찾을 수 없습니다.</p>
+				<h4>?섏씠吏瑜?李얠쓣 ???놁뒿?덈떎.</h4>
+				<p>URL???섎せ ?낅젰?섏뿀嫄곕굹, 蹂寃??뱀? ??젣?섏뼱<br>
+				?붿껌?섏떊 ?섏씠吏瑜?李얠쓣 ???놁뒿?덈떎.</p>
 				<div class="err_nav">
-					<a href="#" onclick="event.preventDefault(); history.back();">돌아가기</a><span class="bar">|</span><a href="/">지도홈</a><span class="bar">|</span><a href="http://m.naver.com">네이버홈</a>
+					<a href="#" onclick="event.preventDefault(); history.back();">?뚯븘媛湲?/a><span class="bar">|</span><a href="/">吏?꾪솃</a><span class="bar">|</span><a href="http://m.naver.com">?ㅼ씠踰꾪솃</a>
 				</div>
 			</div>
 		</div>
-		<!--// 에러영역 -->
+		<!--// ?먮윭?곸뿭 -->
 
 	</div>
-	<!--// 검색결과 -->
+	<!--// 寃?됯껐怨?-->
 
 </div>
 <!-- //content -->
@@ -278,8 +278,8 @@ var tabName = "";
 <script type="text/javascript">
 	$(window).load(function() {
 		/**
-		 * <a href="#">링크</a>
-		 * 위와 같은 형태로 된 링크를 '#'동작이 먹지 않게 막는다.
+		 * <a href="#">留곹겕</a>
+		 * ?꾩? 媛숈? ?뺥깭濡???留곹겕瑜?'#'?숈옉??癒뱀? ?딄쾶 留됰뒗??
 		 */
 		$(document).delegate("a[href='#']","click",function(event){
 			event.preventDefault();

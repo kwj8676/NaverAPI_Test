@@ -1,19 +1,19 @@
-<!DOCTYPE html>
+ï»¿<!DOCTYPE html>
 <html lang='ko'>
-<head>
+<head>`n    <meta charset="UTF-8">
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>PC ·Î±×ÀÎ ¿Ï·á</title>
+    <title>PC ë¡œê·¸ì¸ ì™„ë£Œ</title>
 </head>
 <body>
-    <h1>³×ÀÌ¹ö ·Î±×ÀÎ ¿Ï·á</h1>
-    <p>¾Æ·¡ ÀÎÁõ ÄÚµå¸¦ º¹»çÇØ API ¿äÃ»¿¡ »ç¿ëÇÏ¼¼¿ä.</p>
-    <p id='authCode'>ÀÎÁõ ÄÚµå: ·Îµù Áß...</p>
+    <h1>ë„¤ì´ë²„ ë¡œê·¸ì¸ ì™„ë£Œ</h1>
+    <p>ì•„ë˜ ì¸ì¦ ì½”ë“œë¥¼ ë³µì‚¬í•´ API ìš”ì²­ì— ì‚¬ìš©í•˜ì„¸ìš”.</p>
+    <p id='authCode'>ì¸ì¦ ì½”ë“œ: ë¡œë”© ì¤‘...</p>
 
     <script>
         const urlParams = new URLSearchParams(window.location.search);
         const authCode = urlParams.get('code');
-        document.getElementById('authCode').innerText = authCode ? 'ÀÎÁõ ÄÚµå: ' + authCode : 'ÀÎÁõ ÄÚµå ¾øÀ½';
+        document.getElementById('authCode').innerText = authCode ? 'ì¸ì¦ ì½”ë“œ: ' + authCode : 'ì¸ì¦ ì½”ë“œ ì—†ìŒ';
     </script>
 </body>
 </html>
